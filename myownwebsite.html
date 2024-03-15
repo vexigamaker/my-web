@@ -1,47 +1,114 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        table, th, td{
-            border: 2px groove black
-        }
-    </style>
+<html lang = "en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <title> my growing little website </title>
         <link rel = "icon" type = "image/x-icon" href = "images/favicon.png">
+        <link rel = "stylesheet" href = "style.css">
     </head>
-    <body style = "background-color: rgb(180, 199, 150)">
+    <body>
+        <div id ="header">
+            <img id = "weblogo" src = "weblogo.png" alt = "the web's logo">
+        </div>
         <!-- the growing process -->
-        <h1 style = "text-align: center"> what's up my lads</h1>
-        <hr>
-        <h2 style = "border-top: 2px solid red"> this is vexi's website </h2>
+        <div>
+        <ul>
+            <li><a href = "#introduction">introduction</a></li>
+            <li><a href = "#first day">first day</a></li>
+            <li><a href = "#second day">second day</a></li>
+            <li><a href = "#third day">third day</a></li>
+            <li><a href = "#funeral day">...</a></li>
+            <li><a href = "#fifth day">fifth day</a></li>
+            <li><a href = "#day of realization">day of realization</a></li>
+        </ul>
+        </div>
+        <div class = "heading" id = "introduction" style = "color: cyan;"> greetings </div>
+        <h2 style = "border-top: 2px solid black;"> this is vexi's website </h2>
         <h3> watch as this thing grows like a tree from a sprout, slowly but worth it at the end</h3>
-        <p style = "border: 2px solid red"> day 1 (4/2/2023): adding some basic text elements</p>
+        <p> i've been dreaming of becoming a renowned game developer for 3 years, and i've been studying a lot for that</p>
+        <p> first i started off by studying a game making course for a year, which granted me great proficiency in GMS2</p>
+        <p> now i'm trying to tackle web development, which has proven to be very difficult</p>
+        <div class = "heading" id = "info">
+            some informations
+        </div>
+        <div class = "subheading">
+            about myself
+        </div>
+        <p> i'm vexi, a 17-year-old kid from Vietnam</p>
+        <p> i've always dreamed of becoming a game developer</p>
+        <div class = "heading" id = "first day"> day 1 (4/2/2023): adding some basic text elements</div>
         <a href="https://hoidap247.com" target = "_top"> i go to this website every day to improve my knowledge</a>
-        <p style="color: blue;"> i can solve lots of integrals, my ability has existed since grade 10 </p>
-        <pre> "those lessons about statistics and probability are ridiculous, now get ready for real lessons: <br> lessons in exponential and logarithmic functions" </pre>
+        <b><p style="color: green;"> i can solve lots of integrals, my ability has existed since grade 10 </p></b>
+        <pre> "those lessons about statistics and probability are ridiculous, now get ready for real lessons:
+                <b>lessons in exponential and logarithmic functions"</b></pre>
         <b>-vexi, probably-</b>
-        <p style = "border: 2px solid red"> day 2 (11/2/2023): just changed the background color, starting to use fonts too</p>
+        <div class = "heading" id = "second day"> day 2 (11/2/2023): just changed the background color, starting to use fonts too</div>
         <p><b> the holiday has just arrived, the atmosphere was the most festive i've ever felt</b></p>
         <p><b> still don't have enough money to finally return to my hometown after 6 years, but that doesn't make the Tet less fun </b></p>
         <p><b> guess we're gonna wait for 5 more years or so</b></p>
-        <p style = "border: 2px solid red"> day 3 (2/3/2023): added a table in which i review some recent games i've played </p>
+        <div class = "heading" id = "third day"> day 3 (2/3/2023): added a table in which i review some recent games i've played </div>
+        <p> my games are undertale-related since i'm a big fan of undertale</p>
         <table>
+            <caption> my fav games and my reviews </caption>
             <tr>
+                <th> </th>
                 <th> 1st game </th>
                 <th> 2nd game </th>
                 <th> 3rd game </th>
             </tr>
             <tr>
+                <th> Name </th>
                 <td> UT</td>
-                <td> UT Icebound</td>
                 <td> UT Yellow</td>
+                <td> UT Icebound</td>
             </tr>
             <tr>
+                <th> Description</th>
                 <td> the original, inspiration of all of those fangames</td>
-                <td> one extremely good game, like the ice theme</td>
-                <td> another extremely good game, an actual full game with pretty good characters</td>
+                <td> an extremely good fangame. I liked the ice theme</td>
+                <td> another extremely good fangame, an actual full game with pretty good characters and an exciting story</td>
+            </tr>
+            <tr>
+                <th> top 3 best themes </th>
+                <td> 
+                    <ol>
+                        <li>MEGALOVANIA</li>
+                        <li>ASGORE</li>
+                        <li>Battle Against A True Hero</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>Remedy</li>
+                        <li>Showdown!</li>
+                        <li>A Mother's Love</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>Floral Fracture</li>
+                        <li>Blossoming Bravery</li>
+                        <li>Trailblazer</li>
+                    </ol>
+                </td>
             </tr>
         </table>
-
+        <div class = "heading" id = "funeral day"> day 4 (8/3/2023): ... </div>
+        <p> ... </p>
+        <p> ... </p>
+        <p> ... </p>
+        <p> ... </p>
+        <p> ... </p>
+        <p> i paid the price.</p>
+        <div class = "heading" id = "fifth day"> day 5 (10/3/2023): added an iframe for fun</div>
+        <p> this is one of my trusty website for solving hard calculus questions</p>
+        <p> you first need to press the buttons manually and give the website a question before you can actually type though </p>
+        <p> have fun i guess</p>
+        <iframe src = "https://www.mathway.com/Calculus" height ="500" width = "500"></iframe>
+        <div class = "heading" id = "day of realization"> day 6 (13/3/2023): bitter truth</div>
+        <p> i've had enough of my incompetence.</p>
+        <p> i must rise for i may have to face again those who i truly fear.</p>
+        <p> but alas, my pathetic self doesn't know what is the right thing to do...</p>
+        <p> this website shall be my only evidence of my progress.</p>
     </body>
 </html>
