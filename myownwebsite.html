@@ -1,52 +1,150 @@
 <!DOCTYPE html>
 <html lang = "en">
+    <style>
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset = "UTF-8">
     <head>
-        <title> my growing little website </title>
+        <title> my personal portfolio </title>
         <link rel = "icon" type = "image/x-icon" href = "images/favicon.png">
         <link rel = "stylesheet" href = "style.css">
+        <script src="https://kit.fontawesome.com/6f76a0f809.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id ="header">
-            <img id = "weblogo" src = "weblogo.png" alt = "the web's logo">
-        </div>
+        <!-- header starts -->
+        <div class = "head-container">
+            <div id ="header">
+                <a href = "file:///D:/my-web/myownwebsite.html">
+                    <img id = "weblogo" src = "weblogo.png" alt = "the web's logo">
+                </a>
+            </div>
         <!-- the growing process -->
-        <div>
-        <ul>
-            <li><a href = "#introduction">introduction</a></li>
-            <li><a href = "#first day">first day</a></li>
-            <li><a href = "#second day">second day</a></li>
-            <li><a href = "#third day">third day</a></li>
-            <li><a href = "#funeral day">...</a></li>
-            <li><a href = "#fifth day">fifth day</a></li>
-            <li><a href = "#day of realization">day of realization</a></li>
-        </ul>
+            <!-- navbar starts-->
+            <nav id = "navbar">
+                <div class = "container">
+                    <ul class = "menu">
+                        <li> <a href = "#introduction"> introduction </a></li>
+                        <li> <a href = "#first-day"> first day </a></li>
+                        <li> <a href = "#second-day"> second day </a></li>
+                        <li> <a href = "#third-day"> third day </a></li>
+                        <li> <a href = "#funeral-day"> funeral day </a></li>
+                        <li> <a href = "#fifth-day"> fifth day </a></li>
+                        <li> <a href = "#day-of-realization"> day </a></li>
+                        <li> <a href = "#first-week"> first week </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- navbar ends-->
         </div>
-        <div class = "heading" id = "introduction" style = "color: cyan;"> greetings </div>
-        <h2 style = "border-top: 2px solid black;"> this is vexi's website </h2>
+        <!-- header ends-->
+        <!-- introduction starts-->
+        <div class = "heading" id = "introduction">
+            <p id = "intro"></p>
+            <script src = "script.js"></script>
+        </div>
+        <h2> this is vexi's website </h2>
         <h3> watch as this thing grows like a tree from a sprout, slowly but worth it at the end</h3>
         <p> i've been dreaming of becoming a renowned game developer for 3 years, and i've been studying a lot for that</p>
-        <p> first i started off by studying a game making course for a year, which granted me great proficiency in GMS2</p>
+        <p> first i started off by studying a game making course for a year, which granted me great proficiency in 
+            <abbr title = "GameMaker Studio 2">GMS2</abbr></p>
         <p> now i'm trying to tackle web development, which has proven to be very difficult</p>
+        <!-- introduction ends-->
+        <!-- information starts-->
         <div class = "heading" id = "info">
             some informations
         </div>
-        <div class = "subheading">
+        <div id = "profile-pic-container">
+            <img src = "avatar.png" id = "profile-pic">
+        </div>
+        <div id = "about-me-content">
+            <h1 id = "name"> vexi </h1>
+            <h2 id = "job"> student | game enthusiast</h2>
+        <!-- about self starts -->
+        <div class = "subheading" id = "about-me">
             about myself
         </div>
         <p> i'm vexi, a 17-year-old kid from Vietnam</p>
-        <p> i've always dreamed of becoming a game developer</p>
-        <div class = "heading" id = "first day"> day 1 (4/2/2023): adding some basic text elements</div>
-        <a href="https://hoidap247.com" target = "_top"> i go to this website every day to improve my knowledge</a>
-        <b><p style="color: green;"> i can solve lots of integrals, my ability has existed since grade 10 </p></b>
-        <pre> "those lessons about statistics and probability are ridiculous, now get ready for real lessons:
+        <p> since grade 8 i've been dreaming of becoming a game developer</p>
+        <p> i'm currently learning HTML and CSS to be able to make websites for my future projects </p>
+        </div>
+        <!-- about self ends-->
+        <div class = "subheading" id = "programming-knowledge"> my knowledge of programming languages </div>
+            <p>i'm the "jacks of all trades, master of nothing" type of guy</p>
+            <p>i learn and possess knowledge in a lot of programming languages, but my proficiency in every single one of them is rather superficial</p>
+            <p>so here goes nothing</p>
+            <h2> these are programming languages that i know, including those that i only superficially know </h2>
+        <div class = "pro-languages">
+            <div class = "language-icons">
+                <i class = "fa-brands fa-css3-alt fa-4x"></i>
+                <div>
+                    <h3> CSS3 </h3>
+                </div>
+            </div>
+            <div class = "language-icons">
+                <i class = "fa-brands fa-html5 fa-4x"></i>
+                <div>
+                    <h3> HTML5 </h3>
+                </div>
+            </div>
+            <div class = "language-icons">
+                <i class = "fa-brands fa-js fa-4x"></i>
+                <div>
+                    <h3> JavaScript </h3>
+                </div>
+            </div>
+        </div>
+        <div class = "pro-languages">
+            <div class = "language-icons">
+                <i class = "fa-brands fa-python fa-4x"></i>
+                <div>
+                    <h3> Python </h3>
+                </div>
+            </div>
+            <div class = "language-icons">
+                <i class = "fa-brands fa-osi fa-4x" id = "cpp"></i>
+                <i class = "fa-brands fa-2x" id = "pp">++</i>
+                <div>
+                    <h3> C++ </h3>
+                </div>
+            </div>
+            <div class = "language-icons">
+                <i>
+                    <img src = "gml.png" id = "gml">
+                </i>
+                <div>
+                    <h3> <abbr title = "GameMaker Language"> GML </abbr> </h3>
+                </div>
+            </div>
+        </div>
+        <!-- web purpose starts -->
+        <div class ="subheading">
+            the purpose of this... thing
+        </div>
+        <p> this is like a changelog of my first ever website</p>
+        <p> the website will grow slowly as i am not very creative</p>
+        <!-- web purpose ends-->
+        <div class = "subheading">
+            my projects
+        </div>
+        <p> i used to attend a course in game-making using <abbr title = "GameMaker Studio"> GMS</abbr></p>
+        <p> one of my projects were an undertale survival fangame (it was very crude) </p>
+        <p> unfortunately, i couldn't find the game on my pc, so have this image from a just as crude kirby fangame i made as my final project instead </p>
+        <div class = "heading" id = "first-day"> day 1 (4/2/2024): adding some basic text elements</div>
+        <div class = "content">
+            <a href="https://hoidap247.com" target = "_top"> i go to this website every day to improve my knowledge</a>
+            <b><p style="color: green;"> i can solve lots of integrals, my ability has existed since grade 10 </p></b>
+            <pre> "those lessons about statistics and probability are ridiculous, now get ready for real lessons:
                 <b>lessons in exponential and logarithmic functions"</b></pre>
-        <b>-vexi, probably-</b>
-        <div class = "heading" id = "second day"> day 2 (11/2/2023): just changed the background color, starting to use fonts too</div>
-        <p><b> the holiday has just arrived, the atmosphere was the most festive i've ever felt</b></p>
-        <p><b> still don't have enough money to finally return to my hometown after 6 years, but that doesn't make the Tet less fun </b></p>
-        <p><b> guess we're gonna wait for 5 more years or so</b></p>
-        <div class = "heading" id = "third day"> day 3 (2/3/2023): added a table in which i review some recent games i've played </div>
+            <b>-vexi, probably-</b>
+        </div>
+        <div class = "heading" id = "second-day"> day 2 (11/2/2024): just changed the background color, starting to use fonts too</div>
+            <div class = "content">
+            <p><b> the holiday has just arrived, the atmosphere was the most festive i've ever felt</b></p>
+            <p><b> still don't have enough money to finally return to my hometown after 6 years, but that doesn't make the Tet less fun </b></p>
+            <p><b> guess we're gonna wait for 5 more years or so</b></p>
+            </div>
+        </div>
+        <div class = "heading" id = "third-day"> day 3 (2/3/2024): added a table in which i review some recent games i've played </div>
         <p> my games are undertale-related since i'm a big fan of undertale</p>
         <table>
             <caption> my fav games and my reviews </caption>
@@ -93,22 +191,47 @@
                 </td>
             </tr>
         </table>
-        <div class = "heading" id = "funeral day"> day 4 (8/3/2023): ... </div>
+        <div class = "heading" id = "funeral-day"> day 4 (8/3/2024): ... </div>
         <p> ... </p>
         <p> ... </p>
         <p> ... </p>
         <p> ... </p>
         <p> ... </p>
         <p> i paid the price.</p>
-        <div class = "heading" id = "fifth day"> day 5 (10/3/2023): added an iframe for fun</div>
+        <div class = "heading" id = "fifth-day"> day 5 (10/3/2024): added an iframe for fun</div>
         <p> this is one of my trusty website for solving hard calculus questions</p>
         <p> you first need to press the buttons manually and give the website a question before you can actually type though </p>
         <p> have fun i guess</p>
         <iframe src = "https://www.mathway.com/Calculus" height ="500" width = "500"></iframe>
-        <div class = "heading" id = "day of realization"> day 6 (13/3/2023): bitter truth</div>
-        <p> i've had enough of my incompetence.</p>
+        <div class = "heading" id = "day-of-realization"> day 6 (13/3/2024): bitter truth</div>
+        <b><p> i've had enough of my incompetence.</p>
         <p> i must rise for i may have to face again those who i truly fear.</p>
         <p> but alas, my pathetic self doesn't know what is the right thing to do...</p>
-        <p> this website shall be my only evidence of my progress.</p>
+        <p> this website shall be my only evidence of my progress.</p></b>
+        <div class = "heading" id = "first-week"> day 7 (20/3/2024): away</div>
+        <p> i don't want to be away from this but </p>
+        <p> the schedule's been very tight lately </p>
+        <p> olympic English is pretty much approaching at an unprecedented pace </p>
+        <p> gotta leave this behind until the competition is done</p>
+        <div class = "heading" id = "olympic approaching"> day 8 (27/3/2024): judgement approaching</div>
+        <p> it is only 10 days left before the olympic English competition</p>
+        <p> i really need to focus on my studies</p>
+        <p> my classmates have put a lot of hope on me since i'm the only contestant from my class</p>
+        <b id = "pledge-to-classmates"><p> i must not fail them </p></b>
+        <div class ="heading" id = "post-competition"> day 9 (7/4/2024): the aftermath </div>
+        <p> the test was rather unusually easy</p>
+        <p> i was happy at first because i did the test very well, but it turned into great concern for quite an obvious reason </p>
+        <p> due to the test being easy, marks will skyrocket</p>
+        <p> this can have serious effects on my chance to win a prize </p>
+        <p> the olympic takes percentages of the number of participants to award them prizes, and so high marks will lead to high prizes standard </p>
+        <p> like usually you only need about 15/20 to get the second prize, 
+            but because of the "score inflation", a 17/20 may not even be enough for a third prize</p>
+        <p> this fact has troubled me a lot since the test day</p>
+        <div class = "heading" id = "on-tenterhooks"> day 10 (15/4/2024): uneasiness</div>
+        <p> the city is painfully slow in grading the olympic tests</p>
+        <p> i've been restless and feeling uneasy, trying to look up the test scores to no avail</p>
+        <p> they only needed the afternoon following the olympic to grade the tests for the gifted schools </p>
+        <p> but they needed at least 9 days to do the same for the non-gifted schools?</p>
+        <p> is there actually a single thing hindering their progress?</p>
     </body>
 </html>

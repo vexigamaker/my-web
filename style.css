@@ -14,6 +14,7 @@ tr:nth-child(2) td{
     text-align: center;
 }
 .heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 200%;
     background-color: purple;
     color: white;
@@ -33,16 +34,16 @@ h3{
     font-size: 100%
 }
 body{
-    font-family: aldrich;
-    background-color: lightblue;
+    font-family: franklin_book;
+    background-image: linear-gradient(lightskyblue 2100px, gray 2600px, lightskyblue 3450px);
 }
 @font-face {
-    font-family: aldrich;
-    src: url(Aldrich.ttf)
-}
-@font-face {
-    font-family: eurostile
+    font-family: eurostile;
     src: url(Eurostile.ttf);
+}
+@font-face{
+    font-family: franklin_book;
+    src: url(fonts/Franklin\ Gothic/Franklin\ Gothic\ Medium.ttf);
 }
 pre{
     font-family: 'Courier New', Courier, monospace
@@ -65,45 +66,122 @@ ol li:nth-child(3) {
 }
 #header{
     background-color: darkred;
-    width: 100%;
-    height: 100px;
+    width: 20%;
+    height: 60px;
     margin-top: -10px;
     display: block;
 }
 #weblogo{
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 12vw;
-    height: 10vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 70%;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+#navbar{
+    position: relative;
+    width: 80%;
+    padding: auto;
+    background: rgb(30, 30, 30);
+    margin-top: -10px;
 }
-ul li{
-    float: left;
+#navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;    
 }
-ul a{
-    display: block;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-right: solid 0.75px white;
-    background-color: rgb(50, 50, 50);
-    color: white;
-    text-decoration: none;
-}
-li a:hover{
-    background-color: red;
-    font-weight: bold;
+#navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    border-right: 2px solid white;
+}    
+#navbar .menu li a{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+    color: #fff; 
+}    
+#navbar .menu li a:hover{
+    color: #fff;
 }
 .subheading{
+    font-family: franklin_book;
     background-color: blue;
-    width: fit-content;
+    width: 35%;
     margin: auto;
     text-align: center;
     color: white;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: black;
+    font-size: 150%;
+    border-width: 3px;
+}
+.head-container{
+    display: flex;
+}
+#nav{
+    margin-top: -10px;
+}
+#intro{
+    margin: auto;
+}
+#profile-pic-container{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    background-image: linear-gradient(purple, black, purple);
+}
+#profile-pic{
+    transform: scale(0.4);
+    margin-left: -57.5%;
+}
+.content{
+    background-color: rgb(220, 220, 220);
+    padding: 5px;
+}
+#about-me-content > h1, #about-me-content > h2{
+    text-align: center;
+    color: purple;
+}
+#funeral-day{
+    background-color: gray;
+    color: rgb(0,0,0);
+}
+#pledge-to-classmates{
+    color: red;
+    text-align: center;
+    font-size: 200%;
+}
+.pro-languages{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.pro-languages .language-icons{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.32rem;
+}
+.pro-languages .language-icons i{
+    color: rgb(120, 30, 220);
+    background: lightskyblue;
+    border-radius: 50%;
+    margin-bottom: -1rem;
+    margin-top: 1rem;
+}
+.pro-languages .language-icons h3{
+    color: rgb(120, 30, 220);
+    margin-bottom: 1rem;
+    font-size: 125%;
+}
+#cpp{
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+#pp{
+    position: relative;
 }
